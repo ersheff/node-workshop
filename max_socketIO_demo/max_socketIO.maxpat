@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 4,
+			"minor" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 201.0, 93.0, 992.0, 680.0 ],
+		"rect" : [ 455.0, 121.0, 992.0, 680.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-20",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 151.0, 397.5, 112.0, 60.0 ],
+					"text" : "You should notice another connection appear in the node output."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -57,7 +69,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 259.833333333333371, 325.0, 50.0, 22.0 ],
-					"text" : "sdf"
+					"text" : "aaaaa"
 				}
 
 			}
@@ -94,7 +106,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 819.0, 237.0, 108.5, 35.0 ],
-					"text" : "stdout \"user logged off\""
+					"text" : "stdout \"new connection\""
 				}
 
 			}
@@ -159,8 +171,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 4,
+							"minor" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -249,7 +261,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 7.5, 363.0, 88.0, 22.0 ],
+					"patching_rect" : [ 7.5, 495.0, 88.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -278,7 +290,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 7.5, 331.0, 110.0, 22.0 ],
+					"patching_rect" : [ 7.5, 463.0, 110.0, 22.0 ],
 					"text" : "Open the webpage",
 					"textcolor" : [ 0.52549, 0.062745, 0.003922, 1.0 ]
 				}
@@ -297,7 +309,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 8.5, 275.5, 20.0, 20.0 ],
+					"patching_rect" : [ 8.5, 382.5, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "3",
 					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -312,7 +324,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 8.5, 288.5, 138.0, 39.0 ],
+					"patching_rect" : [ 8.5, 397.5, 138.0, 39.0 ],
 					"text" : "Launch the test page"
 				}
 
@@ -387,12 +399,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-12",
-					"linecount" : 4,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 8.25, 48.5, 317.5, 60.0 ],
-					"text" : "This example communicates with a browser using websockets. The browser code is found in the public/js folder (called mySockets.js), and the server code is found in the max_sockets.js Javascript file."
+					"patching_rect" : [ 8.25, 48.5, 317.5, 47.0 ],
+					"text" : "This example communicates with a browser using websockets. The Client Code is found in the max_socketIO-cleint.js Javascript file."
 				}
 
 			}
@@ -486,8 +498,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 4,
+							"minor" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -860,8 +872,8 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "node-workshop",
-				"bootpath" : "~/Documents/GitHub",
+				"name" : "max_socketIO_demo",
+				"bootpath" : "~/Documents/GitHub/node-workshop",
 				"patcherrelativepath" : "..",
 				"type" : "fold",
 				"implicit" : 1
