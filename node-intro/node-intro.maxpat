@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 81.0, 1209.0, 607.0 ],
+		"rect" : [ 59.0, 81.0, 873.0, 607.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,17 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-33",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 31.0, 521.0, 91.0, 22.0 ],
+					"text" : "print @popup 1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-14",
 					"maxclass" : "number",
@@ -155,17 +166,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-36",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 31.0, 526.0, 91.0, 22.0 ],
-					"text" : "print @popup 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-38",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -175,8 +175,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -418,6 +416,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -582,15 +582,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-35", 0 ],
-					"source" : [ "obj-38", 1 ]
+					"destination" : [ "obj-33", 0 ],
+					"source" : [ "obj-38", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-36", 0 ],
-					"source" : [ "obj-38", 0 ]
+					"destination" : [ "obj-35", 0 ],
+					"source" : [ "obj-38", 1 ]
 				}
 
 			}
@@ -625,7 +625,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "node-intro-handler.js",
-				"bootpath" : "~/Documents/GitStuff/node-workshop",
+				"bootpath" : "~/Documents/GitStuff/node-workshop/node-intro",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -650,7 +650,7 @@
 			}
 , 			{
 				"name" : "node-intro-types.js",
-				"bootpath" : "~/Documents/GitStuff/node-workshop",
+				"bootpath" : "~/Documents/GitStuff/node-workshop/node-intro",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
