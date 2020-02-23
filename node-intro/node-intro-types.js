@@ -1,7 +1,7 @@
 const maxAPI = require('max-api');
 
-// Perhaps more useful is the addHandlers function in which multiple handlers can be defined in a single JavaScript object and loaded at once.
-// As an added bonus, by using addHandlers, we can look for input types.
+// Perhaps more useful than addHandler is the addHandlers function in which multiple handlers can be defined in a single JavaScript object and loaded at once.
+// As an added bonus, by using addHandlers, we can look for input types e.g. numbers, lists, etc.
 
 const handlers = {
 	
@@ -13,7 +13,7 @@ const handlers = {
 	// Look for an incoming list and prepend the message "Received list:".
 	// Using the ... spread operator again.
 	[maxAPI.MESSAGE_TYPES.LIST]: (...list) => {
-		maxAPI.outlet('Received list: ', ...list);
+		console.log('Received list: ', ...list);
 	},	
   };
   

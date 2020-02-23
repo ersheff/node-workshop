@@ -1,8 +1,8 @@
 # This is node-workshop.
 
 ## To-dos:
-- [ ] Max to Max (Local) - Eric
-    - [ ] Create Max API demo patch and js file
+- [X] Max to Max (Local) - Eric
+    - [X] Create Max API demo patch and js file
 - [ ] Max to Max (Remote) - Eric
     - [ ] set up new Heroku server
     - [ ] come up with simple instructions for individual Heroku servers

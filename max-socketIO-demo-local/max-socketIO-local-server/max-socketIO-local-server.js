@@ -1,31 +1,46 @@
-const express = require('express'),
-    app = express(),
-    server = require('http').createServer(app),
-    io = require('socket.io').listen(server);
+const server = require('http').createServer((req, res) => {
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/plain');
+    res.end('Hello');
+}),
+hostname = '127.0.0.1',
+port = 3000;
 
-server.listen(process.env.PORT);
+// launch the server
+server.listen(port, hostname, () => {
+    console.log(`Server running at http://${hostname}:${port}/`);
+});
 
-console.log("Server listening at ${PORT}")
+// start listening for socket connections
+const io = require('socket.io').listen(server);
 
 io.on('connection', (socket) => {
     
-    // --- intial connection messages 
+    // --- intial connection messages
+
+    // post new connectino message to server console
+    console.log('A client has connected.');
+
+    // send a confirmation message to a new client when they have connected
+    socket.emit('messageFromServer', "Welcome from the server!"); 
+
+    // let the other clients know about the new particpant
+    socket.broadcast.emit('messageFromServer', "Someone else has joined!");
     
-    // send a message when a new connection is made to all of the clients EXCEPT for the new particpant
-    socket.broadcast.emit('message', "other player has joined");
-    
-    // send a message to only a new client when they have connected
-    socket.emit('message', "welcome"); 
 
     // ---
 
 
-
-    // --- player to player communications
+    // --- client to client communications
 
     // chat messages
-    socket.on('chat', (chat) => {
-        socket.broadcast.emit('chat', chat);
+    socket.on('chatToServer', (chat) => {
+        socket.broadcast.emit('chatFromServer', chat);
     })
-    
+
+    // data
+    socket.on('dataToServer', (data) => {
+        socket.broadcast.emit('dataFromServer', data);
+    })
+
 });
