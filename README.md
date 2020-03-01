@@ -1,4 +1,6 @@
-# This is node-workshop.
+# Building Networked Performances Using Node - MOXsonic 2020
+
+Welcome.
 
 ## To-dos:
 - [X] Max to Max (Local) - Eric
