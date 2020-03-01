@@ -45,7 +45,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 31.0, 647.0, 64.0, 22.0 ],
-					"presentation_linecount" : 3,
 					"text" : "script start"
 				}
 
@@ -98,7 +97,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 200.0, 591.0, 209.0, 20.0 ],
-					"presentation_linecount" : 2,
 					"text" : "lists will be posted to Node console"
 				}
 
@@ -110,7 +108,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 13.0, 591.0, 185.0, 20.0 ],
-					"presentation_linecount" : 2,
 					"text" : "numbers will be sent to outlet"
 				}
 
@@ -135,7 +132,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 648.0, 63.0, 206.0, 20.0 ],
-					"presentation_linecount" : 2,
 					"text" : "will post list to Node console"
 				}
 
@@ -148,7 +144,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 424.0, 133.0, 150.0, 33.0 ],
-					"presentation_linecount" : 2,
 					"text" : "useful in conjunction with the route object"
 				}
 
@@ -160,7 +155,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 424.0, 63.0, 198.0, 20.0 ],
-					"presentation_linecount" : 2,
 					"text" : "number will output with string flag"
 				}
 
@@ -173,7 +167,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 38.0, 275.0, 117.0, 22.0 ],
-					"text" : "bang"
+					"text" : "RouteExample -1"
 				}
 
 			}
@@ -332,7 +326,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 13.0, 739.0, 298.0, 22.0 ],
+					"patching_rect" : [ 13.0, 739.0, 328.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
@@ -341,7 +335,7 @@
 						"watch" : 1
 					}
 ,
-					"text" : "node.script node-intro-types.js @autostart 1 @watch 1"
+					"text" : "node.script node4max-intro-types.js @autostart 1 @watch 1"
 				}
 
 			}
@@ -563,7 +557,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 13.0, 228.0, 309.0, 22.0 ],
+					"patching_rect" : [ 13.0, 228.0, 338.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
@@ -572,7 +566,7 @@
 						"watch" : 1
 					}
 ,
-					"text" : "node.script node-intro-handler.js @autostart 1 @watch 1"
+					"text" : "node.script node4max-intro-handler.js @autostart 1 @watch 1"
 				}
 
 			}
@@ -800,8 +794,8 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "node-intro-handler.js",
-				"bootpath" : "~/Documents/GitStuff/node-workshop/node-intro",
+				"name" : "node4max-intro-handler.js",
+				"bootpath" : "~/Documents/GitStuff/node-workshop/node4max-intro",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -825,8 +819,8 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "node-intro-types.js",
-				"bootpath" : "~/Documents/GitStuff/node-workshop/node-intro",
+				"name" : "node4max-intro-types.js",
+				"bootpath" : "~/Documents/GitStuff/node-workshop/node4max-intro",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
