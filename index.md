@@ -54,7 +54,13 @@ Many of you are likely familiar with using OSC to communicate between different 
 *Can we say more here about how/why using Node is different in a local scenario?*
 *Need to add stuff here about web sockets and using the library and npm to install the library*
 
-Navigate to the "max-socketIO-demo-local" folder in the workshop repo and open the "max-socketIO-local" patch.
+Navigate to the "max-socketIO-demo-local" folder in the workshop repo.
+
+Let's start by taking a look at the "max-socketIO-local-client" script.
+
+Now, 
+
+Open the "max-socketIO-local" patch.
 
 
 
