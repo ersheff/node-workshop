@@ -9,9 +9,9 @@ First check to see if you have Git, Node.js, and Heroku installed:
 
 `heroku --version`  
 
-If needed, [install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and/or [Node.js](https://nodejs.org/en/download/).
+If needed, install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and/or [Node.js](https://nodejs.org/en/download/).
 
-If you would like to run the remote server example, sign up for a [free Heroku account](https://signup.heroku.com/dc) and [install Heroku](https://devcenter.heroku.com/articles/heroku-cli#download-and-install).
+If you would like to run the remote server example, sign up for a [free Heroku account](https://signup.heroku.com/dc) and install [Heroku](https://devcenter.heroku.com/articles/heroku-cli#download-and-install).
 
 We will also be using Cycling 74's Max. If you don't already own a license, [a 30-day demo can be installed](https://cycling74.com/downloads).
 
@@ -45,7 +45,17 @@ Cycling '74 has some very useful [GitHub repositories](https://github.com/Cyclin
 
 For the purposes of this workshop, we've condensed a handful of examples useful for basic communication and message handling into a single Max patch and a pair of Node scripts. Navigate to the "node4max-intro" folder in the workshop repo and open the "node4max-intro" patch.
 
-## Setting up a local Node for Max client-server
+
+
+## Setting up local Node for Max client-server applications
+
+Many of you are likely familiar with using OSC to communicate between different local computers running Max or other applications. Another way of doing so is to use Node to write client and server applications. When running these applications locally (on the same wired or wireless network), we only need to launch the server application on one computer and client application on all computers that will be communicating with the server and/or each other. No additional setup is required.
+
+*Can we say more here about how/why using Node is different in a local scenario?*
+*Need to add stuff here about web sockets and using the library and npm to install the library*
+
+Navigate to the "max-socketIO-demo-local" folder in the workshop repo and open the "max-socketIO-local" patch.
+
 
 
 
