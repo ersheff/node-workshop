@@ -14,7 +14,7 @@ const port = 80;
 
 // launch the server
 server.listen(port, () => {
-    console.log(`Server listening at ${hostname} on port ${port}.`);
+    console.log(`Server listening at ${hostname}.local on port ${port}.`);
 });
 
 // start listening for socket connections

@@ -5,7 +5,7 @@
   "main": "max-socketIO-heroku-server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node max-socketIO-heroku-server.js"
+    "start": "node max-socketIO-heroku-server.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/ersheff/node-workshop/issues"
   },
-  "homepage": "https://github.com/ersheff/node-workshop#readme"
+  "homepage": "https://github.com/ersheff/node-workshop#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
 }
