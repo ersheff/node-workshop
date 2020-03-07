@@ -1,46 +1,53 @@
-//These first few lines 
+// These first few lines import the http library and set up a very simple server.
 const server = require('http').createServer((req, res) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
     res.end('Hello');
 });
 
+// Here, we use the included os library to find out what our computer's host name is for convenience - this will be printed in the console when the server starts.
 const hostname = require('os').hostname();
+
+// Define your port here - this will need to be the same in your client script.
 const port = 80;
 
-// launch the server
+// Launch the server.
 server.listen(port, () => {
-    console.log(`Server listening at ${hostname} on port ${port}.`);
+    console.log(`Server listening at ${hostname}.local on port ${port}.`);
 });
 
-// start listening for socket connections
+// Start listening for client connections.
 const io = require('socket.io').listen(server);
 
+
+// From here down, we are defining how the server should respond to connections and I/O from the clients.
 io.on('connection', (socket) => {
     
-    // --- intial connection messages
+    // --- Intial connection messages
 
-    // post new connectino message to server console
+    // Report new connection message in the server console.
     console.log('A client has connected.');
 
-    // send a confirmation message to a new client when they have connected
+    // Send a confirmation message to a new client when they have connected.
     socket.emit('messageFromServer', "Welcome from the server!"); 
 
-    // let the other clients know about the new particpant
+    // Let the other clients know about the new particpant.
+    // Using broadcast will automatically go to all clients except for the new client.
     socket.broadcast.emit('messageFromServer', "Someone else has joined!");
     
 
     // ---
 
 
-    // --- client to client communications
+    // --- Client to client communications
 
-    // chat messages
+    // Chat messages
     socket.on('chatToServer', (chat) => {
+    // Using broadcast will automatically go to all clients except for sender.
         socket.broadcast.emit('chatFromServer', chat);
     })
 
-    // data
+    // Miscellaneous data
     socket.on('dataToServer', (data) => {
         socket.broadcast.emit('dataFromServer', data);
     })
