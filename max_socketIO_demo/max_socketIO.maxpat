@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 43.0, 60.0, 1080.0, 547.0 ],
+		"rect" : [ 210.0, 126.0, 1080.0, 547.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -166,7 +166,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 465.5, 275.0, 50.0, 89.0 ],
-					"text" : "connected 3ecB0LriMhHGctISAAAF"
+					"text" : "connected -D7blVjQK5T4Rxw_AAC1"
 				}
 
 			}
@@ -499,7 +499,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 531.5, 364.0, 400.0, 220.0 ],
+					"patching_rect" : [ 531.5, 364.0, 491.0, 220.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -1095,7 +1095,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "max_socketIO_demo",
-				"bootpath" : "~/Documents/GitStuff/node-workshop",
+				"bootpath" : "~/Documents/GitHub/node-workshop",
 				"patcherrelativepath" : "..",
 				"type" : "fold",
 				"implicit" : 1

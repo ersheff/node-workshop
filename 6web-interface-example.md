@@ -92,3 +92,6 @@ Notice the format of the message system. Emit (and its variations) is used to me
 Some debugging lines of code are included `console.log("received increase event...");`
 
 [Cheat Sheet to emit on socket.io](https://socket.io/docs/emit-cheatsheet/)
+
+On the server side, you'll notice `socket.on('XXXmessageName', function(data) etc` - this is a listener on the server, waiting to receive a message with the same key/flag.
+
