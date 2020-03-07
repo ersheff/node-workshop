@@ -71,6 +71,6 @@ The server should point visitors to a webpage. This example shows how to point v
 
 Refer to the image -- as your object reference may be different the this example. Lines 17 and 20 point the visitors to html page.
 
-[Link to server file](/remote-server-web-demo/public/app.js)
+[Link to server file](/remote-server-web-demo/app.js)
 
 ### node/socket events based on page 
