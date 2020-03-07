@@ -1,0 +1,24 @@
+{
+  "name": "heroku_max_demo",
+  "version": "1.0.0",
+  "description": "A remotley-hosted server to communicate with MaxMSP through Node.js",
+  "main": "max-socketIO-heroku-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node max-socketIO-heroku-server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ersheff/node-workshop.git"
+  },
+  "author": "Eric Sheffield, Nick Hwang, Anthony T. Marasco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ersheff/node-workshop/issues"
+  },
+  "homepage": "https://github.com/ersheff/node-workshop#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}
