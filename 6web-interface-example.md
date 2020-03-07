@@ -32,6 +32,8 @@ The bare minimum for this demo is a button element with an assigned id.
 
 [Link to Arena Sequencer's HTML page.](/remote-server-web-demo/public/index.html)
 
+[Live version of the Arena Sequencer HTML page](http://moxsonicapp.herokuapp.com)
+
 ![buttons-with-id](/images/buttons-with-id.png)
 
 Notice the button elements near the bottom of the image with id tags of `'inc-button1'`, `'inc-button2'`.
