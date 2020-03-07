@@ -1,4 +1,4 @@
-![remote server web](/images/remote-server-html.png)
+![remote server web](/images/Remote-web@2x)
 ## Using a web page interface
 
 A web page interface (served by a remote server) allows for different interactions/interfaces than previously mentioned. The interface can use common web tools for responsiveness, formatting, and dynamic content. It's possible to still have non-browser based clients (like Max) connect to this server -- to receive server messages.
@@ -23,19 +23,30 @@ Please reference the previous pages regarding setting up a remote Heroku server 
 ### Create an html file
 The bare minimum for this demo is a button element with an assigned id. 
 
-[image]
+[Link to Arena Sequencer's HTML page.](/remote-server-web-demo/public/index.html)
+
+![buttons-with-id](/images/buttons-with-id.png)
+
+Notice the button elements near the bottom of the image with id tags of `'inc-button1'`, `'inc-button2'`.
 
 Based on the button element's `id`, we can use their button interactions to trigger an event that sends (emits) a message to the server. 
 
-You can have the code that connects the button interaction on the HTML or a referenced separate file.
+You can have the code that connects the button interaction on the HTML or a referenced separate file. Notice the line below that is included in the HTML file -- this is a reference to the button element interaction event and messages to the server code: 
 
-[image of jquery]
+  `<script src="/moxsonic-controller.js"></script>`
+
+Link to the [moxsonic-controller.js file](/remote-server-web-demo/public/moxsonic-controller.js). 
+
+![jquery-events](/images/jquery-events.png)
 
 This example uses jquery. 
 
 An example for js:
 
-
+`const incButton1 = document.getElementById('inc-button1');`
+`incButton1.addEventListener('click', function(e) {`
+  `console.log('increment button 1 was clicked');`
+`});`
 
 For examples with js: https://gist.github.com/aerrity/fd393e5511106420fba0c9602cc05d35)
 
