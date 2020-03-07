@@ -83,7 +83,7 @@ Refer to the image -- as your object reference may be different the this example
 ### node/socket events based on page 
 Let's compare the event coding.
 
-Referring back to the webpage's (button event) [code on moxsonic-controller.js file](/remote-server-web-demo/public/moxsonic-controller.js) and the server's [Link to server file](/remote-server-web-demo/app.js).
+Referring back to the server's [Link to server file](/remote-server-web-demo/app.js) and the webpage's (button event) [code on moxsonic-controller.js file](/remote-server-web-demo/public/moxsonic-controller.js). 
 
 ![remote server web](/images/emits.png)
 
