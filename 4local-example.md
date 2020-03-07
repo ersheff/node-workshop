@@ -13,10 +13,11 @@ So, for example, if you needed to install socket.io in the future, you would run
 
 Then, socket.io would be available to the Node scripts that you write, provided you run them from the same directory.
 
-To try out the local network example, navigate to the "max-socketIO-demo-local" folder in the workshop repo.
+To try out the local network example, navigate to the "max-net-local-demo" folder in the workshop repo.
 
-Let's start by taking a look at the "max-socketIO-local-client" script.
+Start by launching the "max-net-local-server" script from the command line:
+`node path-to-server/max-net-local-server.js`
 
-Now, 
+Then, open the "max-net-local-client.js" file and change the server address (hostname or IP) and port as needed. When the server is launched, it will report the computer's hostname and port.
 
-Open the "max-socketIO-local" patch.
+Now, open the "max-net-local.maxpat" patch and try it out.
