@@ -1,14 +1,11 @@
 
   // messages
   $(function() { // called when DOM is ready
-    var FADE_IN_TIME = 3000; // ms
-    var FADE_OUT_TIME = 100;
 
     // establishes a socket.io connection
     var socket = io();
 
     // interface functions
-
     $('#shootbutton1').click(function() {
       socket.emit('inc', '1');
       console.log("increaseP1");

@@ -43,13 +43,17 @@ This example uses jquery.
 
 An example for js:
 
-`const incButton1 = document.getElementById('inc-button1');`
+`const inc-Button1 = document.getElementById('inc-button1');`
 `incButton1.addEventListener('click', function(e) {`
+	`socket.emit('inc', '1');`
   `console.log('increment button 1 was clicked');`
 `});`
 
 For examples with js: https://gist.github.com/aerrity/fd393e5511106420fba0c9602cc05d35)
 
+Notice that we used the id name from the html page `inc-button1`. In order to reference that button's interaction event, we have a local variable, which we call `inc-Button1`.
+
+In both examples, notice the line `socket.emit('inc', '1');`. This commands a message 'inc 1 ' through socket.io (to the server).
 
 
 ## Webpage hosted on server
