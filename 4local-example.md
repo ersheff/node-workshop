@@ -11,6 +11,7 @@ Speaking of libraries, our client and server scripts are dependent on the [socke
 This has already been done in the files for this workshop, but if you ever need to install any additional libraries, npm (Node package manaeger) makes it very easy and IS installed by default with Node.
 
 So, for example, if you needed to install socket.io in the future, you would run:
+
 `npm install socket.io`
 
 Then, socket.io would be available to the Node scripts that you write, provided you run them from the same directory.
@@ -18,6 +19,7 @@ Then, socket.io would be available to the Node scripts that you write, provided 
 To try out the local network example, navigate to the "max-net-local-demo" folder in the workshop repo.
 
 Start by launching the "max-net-local-server" script from the command line:
+
 `node path-to-server/max-net-local-server.js`
 
 Then, open the "max-net-local-client.js" file and change the server address (hostname or IP) and port as needed. When the server is launched, it will report the computer's hostname and port.
