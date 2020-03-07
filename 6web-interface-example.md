@@ -74,3 +74,14 @@ Refer to the image -- as your object reference may be different the this example
 [Link to server file](/remote-server-web-demo/app.js)
 
 ### node/socket events based on page 
+Let's compare the event coding.
+
+Referring back to the webpage's (button event) [code on moxsonic-controller.js file](/remote-server-web-demo/public/moxsonic-controller.js) and the server's [Link to server file](/remote-server-web-demo/app.js).
+
+![remote server web](/images/emits.png)
+
+Notice the format of the message system. Emit (and its variations) is used to message to the server, and the server after receiving certain messages, 'broadcasts' to other clients. Broadcasting is only one method of sending messages. Reference the link below for more variants of sending messages.
+
+Some debugging lines of code are included `console.log("received increase event...");`
+
+[Cheat Sheet to emit on socket.io](https://socket.io/docs/emit-cheatsheet/)
