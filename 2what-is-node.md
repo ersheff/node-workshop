@@ -1,3 +1,10 @@
+1. [Getting set up for this workshop](index.md)
+2. [What is Node?](2what-is-node.md)
+3. [Introduction to Node for Max](3intro-to-node4max.md)
+4. [Setting up local Node for Max client-server applications](4local-example.md)
+5. [Creating a remote server on Heroku for your Node for Max client](5remote-example.md)
+6. [Using a web page interface](6web-interface-example.md)
+
 ## What is Node?
 
 Node.js (Node) is ["an asynchronous event-driven JavaScript runtime... designed to build scalable network applications..."](https://nodejs.org/en/about/)
@@ -14,8 +21,6 @@ In this workshop, we will be demonstrating multiple approaches that we have foun
 
 Examples of networked performances built using Node (all presented on concerts at MOXsonic 2020):
 
-Nick Hwang's server and [web interface](https://moxsonicapp.herokuapp.com) for Arena Sequencer
-
-Anthony Marasco's [Bendit_I/O](https://www.benditio.com) circuit bending platform (used in Gravity \| Density)
-
-Eric Sheffield and Anna Weisling's telematic duo [Hydrokardia](https://github.com/ersheff/interdependent-series/tree/master/Hydrokardia)
+- Nick Hwang's server and [web interface](https://moxsonicapp.herokuapp.com) for Arena Sequencer
+- Anthony Marasco's [Bendit_I/O](https://www.benditio.com) circuit bending platform (used in Gravity \| Density)
+- Eric Sheffield and Anna Weisling's telematic duo [Hydrokardia](https://github.com/ersheff/interdependent-series/tree/master/Hydrokardia)
