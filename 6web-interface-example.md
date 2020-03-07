@@ -44,9 +44,8 @@ You can have the code that connects the button interaction on the HTML or a refe
 
 Link to the [moxsonic-controller.js file](/remote-server-web-demo/public/moxsonic-controller.js). 
 
+The example in this image uses jquery. 
 ![jquery-events](/images/jquery-events.png)
-
-This example uses jquery. 
 
 An example for js:
 
