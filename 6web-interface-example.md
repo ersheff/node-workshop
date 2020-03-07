@@ -30,9 +30,9 @@ Please reference the previous pages regarding setting up a remote Heroku server 
 ### Create an html file
 The bare minimum for this demo is a button element with an assigned id. 
 
-[Link to Arena Sequencer's HTML page.](/remote-server-web-demo/public/index.html)
+[Code to Arena Sequencer's HTML page.](/remote-server-web-demo/public/index.html)
 
-[Live version of the Arena Sequencer HTML page](http://moxsonicapp.herokuapp.com)
+[Live version of the Arena Sequencer HTML page: http://moxsonicapp.herokuapp.com](http://moxsonicapp.herokuapp.com)
 
 ![buttons-with-id](/images/buttons-with-id.png)
 
