@@ -10,6 +10,8 @@ Welcome.
     - [ ] come up with simple instructions for individual Heroku servers
 - [ ] Max to Bend-It (Local) - Tony 
 - [ ] Web Interfaces to Remote Server to Max / Unity - Nick
+- [ ] Add licensing and author details to all examples!
+    - let's go with 
 
 ## Site structure:
 - Max Node intro (just introduce the basic functions)

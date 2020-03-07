@@ -3,7 +3,7 @@
 
 const maxAPI = require('max-api'),
     io = require('socket.io-client'),
-    socket = io.connect('http://127.0.0.1:3000');
+    socket = io.connect('http://10.24.1.16:3000');
 
 // report connection status
 socket.on('connect', () => {

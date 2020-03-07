@@ -1,13 +1,17 @@
 
 ## Getting set up for this workshop
 
+This workshop will make extensive use of the command line. If you have never or rarely used the command line, never fear - we've all been there.
+
+The default options are Terminal on Mac and Command Prompt on Windows. Code blocks below (white text on a dark background) should be entered as-is into the command line and executed by pressing the return key.
+
 First check to see if you have Git, Node.js, and Heroku installed:
 
 `git --version`
 
 `node --version`
 
-`heroku --version`  
+`heroku --version`
 
 If needed, install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and/or [Node.js](https://nodejs.org/en/download/).
 
@@ -35,6 +39,11 @@ The node.script object and [Node for Max API](https://docs.cycling74.com/nodefor
 
 In this workshop, we will be demonstrating multiple approaches that we have found useful for creating networked performances with Max using Node, including a local client-server application, a remote client-server application, and a web interface.
 
+Examples of networked performances built using Node:
+- Anthony Marasco's [Bendit_I/O](https://www.benditio.com) circuit bending platform
+- Eric Sheffield and Anna Weisling's telematic duo [Hydrokardia](https://github.com/ersheff/interdependent-series/tree/master/Hydrokardia)
+- Nick Hwang's something something
+
 *Do we want to put examples here?*
 
 
@@ -53,6 +62,8 @@ Many of you are likely familiar with using OSC to communicate between different 
 
 *Can we say more here about how/why using Node is different in a local scenario?*
 *Need to add stuff here about web sockets and using the library and npm to install the library*
+*Every OSC receiver is a server*
+
 
 Navigate to the "max-socketIO-demo-local" folder in the workshop repo.
 

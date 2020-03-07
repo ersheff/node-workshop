@@ -2,13 +2,14 @@ const server = require('http').createServer((req, res) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
     res.end('Hello');
-}),
-hostname = '127.0.0.1',
-port = 3000;
+});
+
+const hostname = require('os').hostname();
+const port = 80;
 
 // launch the server
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
+server.listen(port, () => {
+    console.log(`Server listening at ${hostname} on port ${port}.`);
 });
 
 // start listening for socket connections
