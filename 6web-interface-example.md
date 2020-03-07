@@ -67,6 +67,10 @@ The server from previous examples can augmented to:
 Serve a webpage:
 The server should point visitors to a webpage. This example shows how to point visitors to a 'public' folder. 
 
+![remote server web](/images/server-top.png)
+
 Refer to the image -- as your object reference may be different the this example. Lines 17 and 20 point the visitors to html page.
+
+[Link to server file](/remote-server-web-demo/public/app.js)
 
 ### node/socket events based on page 
