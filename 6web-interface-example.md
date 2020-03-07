@@ -95,3 +95,5 @@ Some debugging lines of code are included `console.log("received increase event.
 
 On the server side, you'll notice `socket.on('XXXmessageName', function(data) etc` - this is a listener on the server, waiting to receive a message with the same key/flag AND then calling a function (also handling data that it receive).
 
+In this example, the 'emit.broadcast' sends me the message to all connect clients.
+
