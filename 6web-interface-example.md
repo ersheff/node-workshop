@@ -31,15 +31,22 @@ Notice the button elements near the bottom of the image with id tags of `'inc-bu
 
 Based on the button element's `id`, we can use their button interactions to trigger an event that sends (emits) a message to the server. 
 
-You can have the code that connects the button interaction on the HTML or a referenced separate file.
+You can have the code that connects the button interaction on the HTML or a referenced separate file. Notice the line below that is included in the HTML file -- this is a reference to the button element interaction event and messages to the server code: 
 
-[image of jquery]
+  `<script src="/moxsonic-controller.js"></script>`
+
+Link to the [moxsonic-controller.js file](/remote-server-web-demo/public/moxsonic-controller.js). 
+
+![jquery-events](/images/jquery-events.png)
 
 This example uses jquery. 
 
 An example for js:
 
-
+`const incButton1 = document.getElementById('inc-button1');`
+`incButton1.addEventListener('click', function(e) {`
+  `console.log('increment button 1 was clicked');`
+`});`
 
 For examples with js: https://gist.github.com/aerrity/fd393e5511106420fba0c9602cc05d35)
 
