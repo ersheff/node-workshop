@@ -12,9 +12,7 @@ The node.script object and [Node for Max API](https://docs.cycling74.com/nodefor
 
 In this workshop, we will be demonstrating multiple approaches that we have found useful for creating networked performances with Max using Node, including a local client-server application, a remote client-server application, and a web interface.
 
-Examples of networked performances built using Node:
-- Anthony Marasco's [Bendit_I/O](https://www.benditio.com) circuit bending platform
+Examples of networked performances built using Node (all presented on concerts at MOXsonic 2020):
+- Nick Hwang's server and [web interface](https://moxsonicapp.herokuapp.com) for Arena Sequencer
+- Anthony Marasco's [Bendit_I/O](https://www.benditio.com) circuit bending platform (used in Gravity | Density)
 - Eric Sheffield and Anna Weisling's telematic duo [Hydrokardia](https://github.com/ersheff/interdependent-series/tree/master/Hydrokardia)
-- Nick Hwang's something something
-
-*Do we want to put examples here?*

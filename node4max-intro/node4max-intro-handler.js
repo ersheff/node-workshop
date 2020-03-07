@@ -3,7 +3,7 @@ const maxAPI = require('max-api');
 
 
 // The addHandler function looks for a specific incoming message and pairs a function with it.
-// For example, here it a very basic use of the function that will send the message 'ow!' out of the node.script outlet when a bang is received at its input. 
+// For example, here is a very basic use of the function that will send the message 'ow!' out of the node.script outlet when a bang is received at its input. 
 maxAPI.addHandler("bang", () => {
 	maxAPI.outlet("ow!");
 });
@@ -21,9 +21,9 @@ maxAPI.addHandler("MaxConsole", (data) => {
 });
 
 
-// Flags can be used on the output as well with the route object.
-maxAPI.addHandler("RouteExample", (data) => {
-	maxAPI.outlet("RouteExample", data);
+// Flags can be prepended to the output as well with the route object.
+maxAPI.addHandler("RouteIn", (data) => {
+	maxAPI.outlet("RouteOut", data);
 });
 
 
