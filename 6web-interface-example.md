@@ -1,6 +1,5 @@
+![remote server web](/images/remote-server-html.png)
 ## Using a web page interface
-
-~~Nick write this part~~
 
 A web page interface (served by a remote server) allows for different interactions/interfaces than previously mentioned. The interface can use common web tools for responsiveness, formatting, and dynamic content. It's possible to still have non-browser based clients (like Max) connect to this server -- to receive server messages.
 
@@ -18,8 +17,28 @@ Please reference the previous pages regarding setting up a remote Heroku server 
 ## Create a webpage with interaction-based events
 - [ ] create an html file
 - [ ] include interactive elements (buttons, sliders, text, etc.) 
-- [ ] include event messages to server based on interaction (the shown example uses jquery. For examples with js: https://gist.github.com/aerrity/fd393e5511106420fba0c9602cc05d35)
-- [ ] 
+- [ ] include event messages to server based on interaction 
+
+	
+### Create an html file
+The bare minimum for this demo is a button element with an assigned id. 
+
+[image]
+
+Based on the button element's `id`, we can use their button interactions to trigger an event that sends (emits) a message to the server. 
+
+You can have the code that connects the button interaction on the HTML or a referenced separate file.
+
+[image of jquery]
+
+This example uses jquery. 
+
+An example for js:
+
+
+
+For examples with js: https://gist.github.com/aerrity/fd393e5511106420fba0c9602cc05d35)
+
 
 
 ## Webpage hosted on server
