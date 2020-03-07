@@ -9,6 +9,10 @@
 
 ![remote image](/images/Remote@2x.png)
 
+Example client and server code for the remote networked Node setup used in the piece Hydrokardia can be found here:
+[Server - hosted on Heroku](https://github.com/ersheff/hydrokardia-server)
+[Client - including performance patches](https://github.com/ersheff/interdependent-series/tree/master/Hydrokardia)
+
 Once you’ve built your server and tested it locally, you can host it online and have clients connect to it remotely using hosting service like Heroku. Here are some steps on how to host your Node server on Heroku:
 
 * First, create a Github repo for your project files and [sign up with Heroku](https://signup.heroku.com/). Once you’ve signed up, [download the command line interface tools here](https://devcenter.heroku.com/articles/heroku-cli#download-and-install).
