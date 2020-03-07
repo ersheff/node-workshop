@@ -23,7 +23,6 @@ app.get('/', (req, res) => {
 
 // "Listens" for client connections
 io.sockets.on('connection', function(socket) {
-  users++;
   // print in server console the socket's id
   console.log('New user connected: ' + socket.id);
   // print the number of users

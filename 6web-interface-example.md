@@ -1,4 +1,4 @@
-![remote server web](/images/Remote-web@2x)
+![remote server web](/images/Remote-web@2x.png)
 ## Using a web page interface
 
 A web page interface (served by a remote server) allows for different interactions/interfaces than previously mentioned. The interface can use common web tools for responsiveness, formatting, and dynamic content. It's possible to still have non-browser based clients (like Max) connect to this server -- to receive server messages.
@@ -49,12 +49,13 @@ An example for js:
   `console.log('increment button 1 was clicked');`
 `});`
 
-For examples with js: https://gist.github.com/aerrity/fd393e5511106420fba0c9602cc05d35)
+For examples with JavaScript: https://gist.github.com/aerrity/fd393e5511106420fba0c9602cc05d35)
 
 Notice that we used the id name from the html page `inc-button1`. In order to reference that button's interaction event, we have a local variable, which we call `inc-Button1`.
 
 In both examples, notice the line `socket.emit('inc', '1');`. This commands a message 'inc 1 ' through socket.io (to the server).
 
+The server should be listening for a message containing 'inc' -- where it'll have its own logic.
 
 ## Webpage hosted on server
 The server from previous examples can augmented to:
@@ -66,9 +67,6 @@ The server from previous examples can augmented to:
 Serve a webpage:
 The server should point visitors to a webpage. This example shows how to point visitors to a 'public' folder. 
 
-Refer to the image -- as your object reference may be different the this example. The following line points visitors to a folder 'public', where our 'index.html' webpage is located.
-
->
-app.use(express.static(path.join(__dirname, 'public')));
+Refer to the image -- as your object reference may be different the this example. Lines 17 and 20 point the visitors to html page.
 
 ### node/socket events based on page 
