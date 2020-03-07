@@ -1,3 +1,10 @@
+1. [Getting set up for this workshop](index.md)
+2. [What is Node?](2what-is-node.md)
+3. [Introduction to Node for Max](3intro-to-node4max.md)
+4. [Setting up local Node for Max client-server applications](4local-example.md)
+5. [Creating a remote server on Heroku for your Node for Max client](5remote-example.md)
+6. [Using a web page interface](6web-interface-example.md)
+
 ## Creating a remote server on Heroku for your Node for Max client
 
 ![remote image](/images/Remote@2x.png)
