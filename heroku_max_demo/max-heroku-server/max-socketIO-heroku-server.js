@@ -3,22 +3,18 @@ Node Server hosted on Heroku
 by Eric Sheffield, Nick Hwang, and Anthony T. Marasco (2020)
 */
 
-const server = require('http').createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello');
-});
+const express = require('express'),
+    app = express(),
+    server = require('http').createServer(app),
+    io = require('socket.io').listen(server); 
 
-const hostname = require('os').hostname();
-const port = 80;
+
 
 // launch the server
-server.listen(port, () => {
-    console.log(`Server listening at ${hostname}.local on port ${port}.`);
-});
+server.listen(process.env.PORT); // start listening for socket connections
 
-// start listening for socket connections
-const io = require('socket.io').listen(server);
+
+
 
 io.on('connection', (socket) => {
     
