@@ -4,10 +4,10 @@
 4. [Setting up local Node for Max client-server applications](4local-example.md)
 5. [Creating a remote server on Heroku for your Node for Max client](5remote-example.md)
 6. [Using a web page interface](6web-interface-example.md)
-
+![remote server web](/images/Remote@2x.png)
 ## Creating a remote server on Heroku for your Node for Max client
 
-<<<<<<< HEAD
+
 Once you’ve built your server and tested it locally, you can host it online and have clients connect to it remotely using hosting service like Heroku. Here are some steps on how to host your Node server on Heroku:
 
 * First, create a Github repo for your project files and [sign up with Heroku](https://signup.heroku.com/). Once you’ve signed up, [download the command line interface tools here](https://devcenter.heroku.com/articles/heroku-cli#download-and-install).
