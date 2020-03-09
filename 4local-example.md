@@ -1,4 +1,13 @@
+1. [Getting set up for this workshop](index.md)
+2. [What is Node?](2what-is-node.md)
+3. [Introduction to Node for Max](3intro-to-node4max.md)
+4. [Setting up local Node for Max client-server applications](4local-example.md)
+5. [Creating a remote server on Heroku for your Node for Max client](5remote-example.md)
+6. [Using a web page interface](6web-interface-example.md)
+
 ## Setting up local Node for Max client-server applications
+
+![local image](/images/Local@2x.png)
 
 Many of you are likely familiar with using OSC to communicate between different local computers running Max or other applications. Another way of doing so is to use Node to write client and server applications. When running these applications locally (on the same wired or wireless network), we only need to launch the server application on one computer and client application on all computers that will be communicating with the server and/or each other. The server computer can also run an instance of the client if desired. No additional setup is required.
 
@@ -9,14 +18,17 @@ Speaking of libraries, our client and server scripts are dependent on the [socke
 This has already been done in the files for this workshop, but if you ever need to install any additional libraries, npm (Node package manaeger) makes it very easy and IS installed by default with Node.
 
 So, for example, if you needed to install socket.io in the future, you would run:
+
 `npm install socket.io`
 
 Then, socket.io would be available to the Node scripts that you write, provided you run them from the same directory.
 
-To try out the local network example, navigate to the "max-socketIO-demo-local" folder in the workshop repo.
+To try out the local network example, navigate to the "max-net-local-demo" folder in the workshop repo.
 
-Let's start by taking a look at the "max-socketIO-local-client" script.
+Start by launching the "max-net-local-server" script from the command line:
 
-Now, 
+`node path-to-server/max-net-local-server.js`
 
-Open the "max-socketIO-local" patch.
+Then, open the "max-net-local-client.js" file and change the server address (hostname or IP) and port as needed. When the server is launched, it will report the computer's hostname and port.
+
+Now, open the "max-net-local.maxpat" patch and try it out.

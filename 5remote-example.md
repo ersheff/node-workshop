@@ -1,5 +1,6 @@
 ## Creating a remote server on Heroku for your Node for Max client
 
+<<<<<<< HEAD
 Once you’ve built your server and tested it locally, you can host it online and have clients connect to it remotely using hosting service like Heroku. Here are some steps on how to host your Node server on Heroku:
 
 * First, create a Github repo for your project files and [sign up with Heroku](https://signup.heroku.com/). Once you’ve signed up, [download the command line interface tools here](https://devcenter.heroku.com/articles/heroku-cli#download-and-install).
@@ -29,3 +30,10 @@ npm-debug.log
 	* Next, run `heroku create`  to publish your app to Heroku. 
 	* You can change the default name that Heroku assigns to your app by running `heroku apps:rename ` followed by the new name that you’d prefer. Here’s an example:
 	`heroku apps:rename moxsonicrulez`
+=======
+![remote image](/images/Remote@2x.png)
+
+*Ideally, we can just write the local example so that the server can be put on heroku and it just works once the address in the client is changed.*
+*Eric will take care of getting the patch and script ready*
+*Tony, can you write Heroku setup instructions?*
+>>>>>>> 3af5edee39e864b0d5148396a6d98cd506427d2e
