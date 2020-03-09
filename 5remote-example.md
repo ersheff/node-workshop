@@ -39,6 +39,6 @@ npm-debug.log
 * At this point you should commit all of your changes to your git repo (learn about doing that [here](https://help.github.com/en/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line)), but for now we’ll jump right into deploying this server to Heroku.
 	* In your app’s directory,  run `heroku login` and  press any key to open a browser window. Enter your login credentials when prompted.
 	* Next, run `heroku create`  to publish your app to Heroku. 
-	* You can change the default name that Heroku assigns to your app by running `heroku apps:rename ` followed by the new name that you’d prefer. Here’s an example:
-	`heroku apps:rename moxsonicrulez`
+	* You can change the default name that Heroku assigns to your app by running `heroku apps:rename ` followed by the new name that you’d prefer, the --app flag and the old name assigned to your app by Heroku. Here’s an example:
+	`heroku apps:rename noderemoteworkshop --app damp-reef-50960`
 
