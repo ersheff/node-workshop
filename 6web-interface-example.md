@@ -1,3 +1,10 @@
+1. [Getting set up for this workshop](index.md)
+2. [What is Node?](2what-is-node.md)
+3. [Introduction to Node for Max](3intro-to-node4max.md)
+4. [Setting up local Node for Max client-server applications](4local-example.md)
+5. [Creating a remote server on Heroku for your Node for Max client](5remote-example.md)
+6. [Using a web page interface](6web-interface-example.md)
+
 ![remote server web](/images/Remote-web@2x.png)
 ## Using a web page interface
 
@@ -23,7 +30,9 @@ Please reference the previous pages regarding setting up a remote Heroku server 
 ### Create an html file
 The bare minimum for this demo is a button element with an assigned id. 
 
-[Link to Arena Sequencer's HTML page.](/remote-server-web-demo/public/index.html)
+[Code to Arena Sequencer's HTML page.](/remote-server-web-demo/public/index.html)
+
+[Live version of the Arena Sequencer HTML page: http://moxsonicapp.herokuapp.com](http://moxsonicapp.herokuapp.com)
 
 ![buttons-with-id](/images/buttons-with-id.png)
 
@@ -37,9 +46,8 @@ You can have the code that connects the button interaction on the HTML or a refe
 
 Link to the [moxsonic-controller.js file](/remote-server-web-demo/public/moxsonic-controller.js). 
 
+The example in this image uses jquery. 
 ![jquery-events](/images/jquery-events.png)
-
-This example uses jquery. 
 
 An example for js:
 
@@ -67,6 +75,26 @@ The server from previous examples can augmented to:
 Serve a webpage:
 The server should point visitors to a webpage. This example shows how to point visitors to a 'public' folder. 
 
+![remote server web](/images/server-top.png)
+
 Refer to the image -- as your object reference may be different the this example. Lines 17 and 20 point the visitors to html page.
 
+[Link to server file](/remote-server-web-demo/app.js)
+
 ### node/socket events based on page 
+Let's compare the event coding.
+
+Referring back to the server's [Link to server file](/remote-server-web-demo/app.js) and the webpage's (button event) [code on moxsonic-controller.js file](/remote-server-web-demo/public/moxsonic-controller.js). 
+
+![remote server web](/images/emits.png)
+
+Notice the format of the message system. Emit (and its variations) is used to message to the server, and the server after receiving certain messages, 'broadcasts' to other clients. Broadcasting is only one method of sending messages. Reference the link below for more variants of sending messages.
+
+Some debugging lines of code are included `console.log("received increase event...");`
+
+[Cheat Sheet to emit on socket.io](https://socket.io/docs/emit-cheatsheet/)
+
+On the server side, you'll notice `socket.on('XXXmessageName', function(data) etc` - this is a listener on the server, waiting to receive a message with the same key/flag AND then calling a function (also handling data that it receive).
+
+In this example, the 'emit.broadcast' sends me the message to all connect clients.
+

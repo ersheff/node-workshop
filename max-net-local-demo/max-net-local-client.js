@@ -2,10 +2,13 @@ const maxAPI = require('max-api'),
     io = require('socket.io-client'),
 
     // In this line, the address and port must match that of the server.
+<<<<<<< HEAD
 
     // 127.0.0.1 is the default for server's located on your own machine, but you can edit this line to point elsewhere.
    
 
+=======
+>>>>>>> 07fea2ab964d3d6a35a3708e5e16cd8bdda9acaa
     socket = io.connect('http://153.91.252.59:80');
 
 // Report connection status to Max outlet.

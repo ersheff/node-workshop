@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 245.0, 177.0, 1080.0, 547.0 ],
+		"rect" : [ 210.0, 126.0, 1080.0, 547.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -56,8 +56,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 151.0, 463.0, 185.0, 60.0 ],
-					"presentation_linecount" : 5,
+					"patching_rect" : [ 151.0, 463.0, 186.0, 60.0 ],
 					"text" : "Also try navigating to address on your mobile device:\nmoxsonicapp.herokuapp.com\n"
 				}
 
@@ -167,8 +166,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 465.5, 275.0, 50.0, 89.0 ],
-					"presentation_linecount" : 6,
-					"text" : "connected 3ecB0LriMhHGctISAAAF"
+					"text" : "connected -D7blVjQK5T4Rxw_AAC1"
 				}
 
 			}
@@ -180,7 +178,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 491.5, 121.5, 73.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "script status"
 				}
 
@@ -363,7 +360,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-36",
@@ -727,6 +723,8 @@
 									"saved_object_attributes" : 									{
 										"autostart" : 0,
 										"defer" : 0,
+										"node_bin_path" : "",
+										"npm_bin_path" : "",
 										"watch" : 0
 									}
 ,
@@ -868,8 +866,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
