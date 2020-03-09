@@ -4,6 +4,7 @@
 4. [Setting up local Node for Max client-server applications](4local-example.md)
 5. [Creating a remote server on Heroku for your Node for Max client](5remote-example.md)
 6. [Using a web page interface](6web-interface-example.md)
+
 ![remote server web](/images/Remote@2x.png)
 ## Creating a remote server on Heroku for your Node for Max client
 
