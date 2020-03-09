@@ -20,7 +20,7 @@ io.on('connection', (socket) => {
     
     // --- intial connection messages
 
-    // post new connectino message to server console
+    // post new connection message to server console
     console.log('A client has connected.');
 
     // send a confirmation message to a new client when they have connected
