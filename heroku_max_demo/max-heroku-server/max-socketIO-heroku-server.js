@@ -11,7 +11,7 @@ const express = require('express'),
 
 
 // launch the server
-server.listen(process.env.PORT); // start listening for socket connections
+server.listen(process.env.PORT || 80); // start listening for socket connections
 
 
 

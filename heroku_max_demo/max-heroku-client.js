@@ -3,7 +3,7 @@ const maxAPI = require('max-api'),
     // In this line, the address and port must match that of the server.
     // Instead of pointing to our localhost, we're going to point to the Heroku app
 	//address
-    socket = io.connect('https://moxsonicrulez.herokuapp.com');
+    socket = io.connect('https://noderemoteworkshop.herokuapp.com/');
 
 // Report connection status to Max outlet.
 socket.on('connect', () => {
