@@ -5,6 +5,7 @@
 5. [Creating a remote server on Heroku for your Node for Max client](5remote-example.md)
 6. [Using a web page interface](6web-interface-example.md)
 
+![remote server web](/images/Remote@2x.png)
 
 ## Example client and server code for the remote networked Node setup used in the piece Hydrokardia can be found here:
 [Server - hosted on Heroku](https://github.com/ersheff/hydrokardia-server)
