@@ -6,11 +6,11 @@
     "start": "max_socketIO-client.js"
   },
   "dependencies": {
-    "body-parser": "~1.17.1",
+    "body-parser": "~1.20.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.3",
     "ejs": "~2.5.6",
-    "express": "~4.15.2",
+    "express": "~4.15.5",
     "serve-favicon": "~2.4.2",
     "ws": "^4.0.0",
     "socket.io": "^2.1.1",
